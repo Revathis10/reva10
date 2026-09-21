@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-primary: 'Rubik', sans-serif;
+    --font-secondary: 'Rubik', sans-serif;
+    --font-text: 'Work Sans', sans-serif;
+    --font-accent: 'Work Sans', sans-serif;
+  }
+
+  body {
+    font-family: 'Work Sans', sans-serif;
+    color: #f3f2ee;
+    background-color: #121110;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rubik', sans-serif;
+  }
+}
+
+.font-rubik {
+  font-family: 'Rubik', sans-serif;
+}
+
+.font-worksans {
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* Strict requirement 8: all the element should have an hover effect of y axis -30 as whole container */
+.hover-lift-30 {
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+  will-change: transform;
+}
+
+.hover-lift-30:hover {
+  transform: translateY(-30px);
+}
+
+/* Custom scrollbar for refined aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #141312;
+}
+::-webkit-scrollbar-thumb {
+  background: #383431;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E4ED64;
+}
